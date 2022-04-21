@@ -9,7 +9,7 @@ const AddUser = () => {
     const user = { name, email };
 
     // send data to the server
-    fetch('', {
+    fetch('http://localhost:5000/user', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
