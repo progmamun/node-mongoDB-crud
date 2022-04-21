@@ -38,3 +38,5 @@
 - collection.find(query)
 - cursor.toArray()
 - return the result
+- from client useEffect and display
+-
