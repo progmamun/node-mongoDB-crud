@@ -14,7 +14,13 @@ const AddUser = () => {
       headers: {
         'content-type': 'application/json',
       },
-    });
+      body: JSON.stringify(user),
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log('success', data);
+        alert('users added successfully!!');
+      });
   };
   return (
     <div>
@@ -23,6 +29,7 @@ const AddUser = () => {
         <input type="text" name="name" id="" />
         <br />
         <input type="email" name="email" id="" />
+        <input type="submit" value="submit" />
       </form>
     </div>
   );

@@ -28,3 +28,5 @@
 - Client side: create form
 - on submit get form data and create user object
 - on Server: Create user POST method to receive data on the backend
+- on client side: set fetch with POST, headers, body
+- Make sure you return a json from the POST API

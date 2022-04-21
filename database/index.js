@@ -26,7 +26,8 @@ async function run() {
     app.post('/user', (req, res) => {
       const newUser = req.body;
       console.log('adding new user', newUser);
-      res.send({ result: 'success' });
+      const result = await userCollection.insertOne(newUser);
+      res.send(result);
     });
     /* const user = { name: 'Mamun Khan', email: 'dev@gmail.com' };
     const result = await userCollection.insertOne(user);
